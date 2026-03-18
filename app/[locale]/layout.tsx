@@ -30,7 +30,7 @@ export async function generateMetadata({
     title:
       typeof title === "string"
         ? title
-        : "Auditoria Gubernamental y Gestion Inteligente | Auditoria & Gestion Inteligente",
+        : "AGIL | Auditoria & Gestion Inteligente de Lineamientos",
     description:
       typeof description === "string"
         ? description

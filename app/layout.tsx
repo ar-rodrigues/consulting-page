@@ -25,8 +25,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Auditoria Gubernamental y Gestion Inteligente | Auditoria & Gestion Inteligente",
+  title: "AGIL | Auditoria & Gestion Inteligente de Lineamientos",
   description:
     "Despacho especializado en auditoria gubernamental, control interno y soluciones tecnologicas de trazabilidad para los tres niveles de gobierno en Mexico.",
   icons: {
