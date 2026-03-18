@@ -20,6 +20,13 @@
 # production
 /build
 
+#cursor
+.cursor
+
+#files
+public/guideline-ajusts.md
+guideline.md
+
 # misc
 .DS_Store
 *.pem

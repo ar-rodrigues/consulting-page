@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "title": "Auditoria Gubernamental y Gestion Inteligente | Auditoria & Gestion Inteligente",
+    "description": "Despacho especializado en auditoria gubernamental, control interno y soluciones tecnologicas de trazabilidad para los tres niveles de gobierno en Mexico."
+  },
+  "landing": {
+    "nav": {
+      "brand": "Auditor\u00eda & Gesti\u00f3n\nInteligente de Lineamientos",
+      "links": {
+        "services": "Auditoria",
+        "technology": "Tecnologia",
+        "process": "Proceso"
+      },
+      "cta": "Diagnostico"
+    },
+    "hero": {
+      "eyebrow": "Auditoria · Tecnologia · Trazabilidad",
+      "title": {
+        "line1": "Control total.",
+        "emphasis": "Auditoria inteligente.",
+        "line3": "Sin puntos ciegos."
+      },
+      "subtitle": "Combinamos expertise en auditoria gubernamental con soluciones tecnologicas de control operativo. De procesos manuales a sistemas auditables y escalables.",
+      "ctaPrimary": "Conoce nuestros servicios \u2192",
+      "ctaSecondary": "Diagnostico gratuito",
+      "pillars": {
+        "pillar1": {
+          "label": "Especializacion",
+          "text": "Auditoria gubernamental + Control operativo"
+        },
+        "pillar2": {
+          "label": "Cobertura",
+          "text": "Los tres niveles de gobierno en Mexico"
+        },
+        "pillar3": {
+          "label": "Enfoque",
+          "text": "Trazabilidad · Transparencia · Eficiencia"
+        }
+      },
+      "supportCards": {
+        "card1": {
+          "label": "Trazabilidad total",
+          "title": "Registro auditable de quien, donde y cuando",
+          "sub": "Sin bitacoras de papel \u00b7 Tiempo real"
+        },
+        "card2": {
+          "label": "Marco normativo",
+          "title": "ASF \u00b7 SFP \u00b7 CONAC \u00b7 3 niveles de gobierno",
+          "sub": "Federal, Estatal y Municipal"
+        },
+        "card3": {
+          "label": "Modularidad",
+          "title": "Comienza con software, escala a hardware",
+          "sub": "RFID \u00b7 Barreras vehiculares \u00b7 Sensores"
+        },
+        "card4": {
+          "label": "Diagnostico",
+          "title": "Sesion de diagnostico tecnico sin costo",
+          "sub": "Agenda tu primera consulta hoy"
+        }
+      }
+    },
+    "services": {
+      "eyebrow": "Servicios de auditoria",
+      "title": "Especializacion al servicio de la gestion publica",
+      "description": "Disenados para el marco normativo mexicano. Cubrimos los tres niveles de gobierno con rigor tecnico y acompanamiento real en cada etapa.",
+      "cards": {
+        "card01": {
+          "number": "01",
+          "title": "Auditoria Gubernamental",
+          "description": "Financiera, de desempeno, de cumplimiento y de obra publica. Revision desde licitacion hasta entrega-recepcion con apego a CONAC."
+        },
+        "card02": {
+          "number": "02",
+          "title": "Gestion Integral de Riesgos",
+          "description": "Matrices de riesgo, protocolos antifraude, ciberseguridad y planes de continuidad operativa alineados al SNA."
+        },
+        "card03": {
+          "number": "03",
+          "title": "Control Interno y Compliance",
+          "description": "Implementacion del modelo COSO bajo disposiciones de la SFP. Manuales de organizacion, codigos de etica y sistemas de denuncia."
+        },
+        "card04": {
+          "number": "04",
+          "title": "Consultoria y Solventacion",
+          "description": "Acompanamiento frente a ASF, ASE y SFP. Expedientes tecnicos, oficios de respuesta y armonizacion contable al CONAC."
+        }
+      }
+    },
+    "technology": {
+      "eyebrow": "Soluciones tecnologicas",
+      "title": "Tecnologia para instituciones sin puntos ciegos",
+      "description": "El problema no es la falta de informacion — es que esa informacion no esta disponible en tiempo real.",
+      "quote": "\"Lo que no se mide, no se puede gestionar.\"",
+      "cards": {
+        "card01": {
+          "title": "Control de Accesos y Visitas",
+          "description": "Seguridad perimetral sin friccion mediante QR. Registro auditable de ingresos/salidas en tiempo real, credenciales digitales y reportes automaticos.",
+          "scenario": "Un ciudadano recibe su QR al agendar cita. Al llegar lo escanea \u2014 el sistema notifica al funcionario y registra hora exacta. Sin bitacoras de papel."
+        },
+        "card02": {
+          "title": "Gestion de Capital Humano",
+          "description": "Check-in/out con geolocalizacion. Verifica presencia en coordenadas correctas y genera reportes consolidados de horas sin discrepancias.",
+          "scenario": "El supervisor confirma que el personal de campo inicio en el lugar y hora exactos. Al cierre del mes, RR.HH. descarga el reporte sin conciliacion manual."
+        },
+        "card03": {
+          "title": "Control de Activos e Inventarios",
+          "description": "Monitoreo digital de existencias y activos fijos. Alertas de stock minimo y tableros de decision. Escalable a tecnologia RFID.",
+          "scenario": "El sistema alerta cuando el stock de insumos criticos baja del umbral. Detecta faltantes en minutos, sin detener la operacion."
+        }
+      },
+      "modularNote": "Todas nuestras soluciones son modulares: comienza con software y escala a RFID, sensores o barreras vehiculares conforme tu institucion lo demande."
+    },
+    "process": {
+      "eyebrow": "Proceso",
+      "leftCard": {
+        "title": "Asi trabajamos contigo",
+        "description": "No vendemos soluciones genericas. Adaptamos las herramientas a los flujos especificos de tu institucion desde el primer dia.",
+        "cta": "Iniciar diagnostico \u2192"
+      },
+      "phases": {
+        "card01": {
+          "title": "Diagnostico de necesidades",
+          "description": "Analizamos los procesos actuales, identificamos brechas y definimos el alcance de la implementacion sin compromisos."
+        },
+        "card02": {
+          "title": "Configuracion de la plataforma",
+          "description": "Adaptamos los modulos y flujos del sistema a las necesidades concretas de tu organizacion."
+        },
+        "card03": {
+          "title": "Capacitacion de usuarios",
+          "description": "Entrenamos a tu equipo para que adopte las herramientas con confianza desde el primer dia."
+        },
+        "card04": {
+          "title": "Soporte y escalamiento",
+          "description": "Acompanamos el crecimiento de la solucion e integramos hardware avanzado cuando estes listo."
+        }
+      }
+    },
+    "contact": {
+      "eyebrow": "Contacto",
+      "title": "\u00bfListo para gestionar sin puntos ciegos?",
+      "description": "Cu\u00e9ntanos en qu\u00e9 etapa se encuentra tu instituci\u00f3n. Un especialista se pondr\u00e1 en contacto para coordinar tu sesi\u00f3n de diagn\u00f3stico sin costo.",
+      "direct": {
+        "contactLabel": "Contacto directo",
+        "contactValue": "",
+        "phoneLabel": "Tel\u00e9fono",
+        "phoneValue": "",
+        "emailLabel": "Correo",
+        "emailValue": ""
+      },
+      "form": {
+        "title": "Solicitar diagnostico",
+        "fields": {
+          "fullName": {
+            "label": "Nombre completo",
+            "placeholder": "Maria Gonzalez"
+          },
+          "institution": {
+            "label": "Institucion",
+            "placeholder": "Dependencia o empresa"
+          },
+          "email": {
+            "label": "Correo electronico",
+            "placeholder": "correo@institucion.gob.mx"
+          },
+          "phone": {
+            "label": "Telefono",
+            "placeholder": "222 000 0000"
+          },
+          "orgType": {
+            "label": "Tipo de organizacion"
+          },
+          "interest": {
+            "label": "\u00bfQue te interesa?"
+          },
+          "challenge": {
+            "label": "Desafio principal",
+            "placeholder": "Describe brevemente la situacion de tu institucion..."
+          }
+        },
+        "orgTypeOptions": {
+          "public": "Publico",
+          "private": "Privado"
+        },
+        "interestOptions": {
+          "audit": "Auditoria gubernamental",
+          "technology": "Soluciones tecnologicas",
+          "both": "Ambas"
+        },
+        "submitLabel": "Solicitar diagnostico",
+        "submitLoading": "Enviando...",
+        "successMessage": "\u2713 Solicitud enviada \u2014 te contactaremos pronto",
+        "successSubMessage": "Si requerimos informaci\u00f3n adicional, te escribiremos por correo para coordinar tu sesi\u00f3n.",
+        "summaryLabel": "Resumen de tu solicitud",
+        "sendAnotherLabel": "Enviar otra solicitud",
+        "validation": {
+          "email": "Ingresa un correo electr\u00f3nico v\u00e1lido.",
+          "phone": "Ingresa un tel\u00e9fono con solo n\u00fameros (7 a 15 d\u00edgitos)."
+        },
+        "errorHeading": "No pudimos enviar tu solicitud",
+        "errorSubMessage": "Escr\u00edbenos a",
+        "contactEmail": "alissonrodrigues.st@gmail.com",
+        "tryAgainLabel": "Intentar de nuevo"
+      }
+    },
+    "footer": {
+      "brand": "Auditor\u00eda & Gesti\u00f3n\nInteligente de Lineamientos",
+      "centerLine": "",
+      "rightLine": "\u00a9 2025 \u00b7 Ciudad de Mexico, Mexico"
+    }
+  }
+}

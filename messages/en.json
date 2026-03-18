@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "title": "Government Auditing & Intelligent Management | Auditoría & Gestión Inteligente",
+    "description": "Specialized firm in government auditing, internal control, and traceability technology solutions for all three levels of government in Mexico."
+  },
+  "landing": {
+    "nav": {
+      "brand": "Auditor\u00eda & Gesti\u00f3n\nInteligente de Lineamientos",
+      "links": {
+        "services": "Auditing",
+        "technology": "Technology",
+        "process": "Process"
+      },
+      "cta": "Diagnosis"
+    },
+    "hero": {
+      "eyebrow": "Audit · Technology · Traceability",
+      "title": {
+        "line1": "Full control.",
+        "emphasis": "Smart auditing.",
+        "line3": "No blind spots."
+      },
+      "subtitle": "We combine expertise in government auditing with technology solutions for operational control. From manual processes to auditable and scalable systems.",
+      "ctaPrimary": "Explore our services \u2192",
+      "ctaSecondary": "Free diagnosis",
+      "pillars": {
+        "pillar1": {
+          "label": "Specialization",
+          "text": "Government auditing + Operational control"
+        },
+        "pillar2": {
+          "label": "Coverage",
+          "text": "All three levels of government in Mexico"
+        },
+        "pillar3": {
+          "label": "Focus",
+          "text": "Traceability · Transparency · Efficiency"
+        }
+      },
+      "supportCards": {
+        "card1": {
+          "label": "Total traceability",
+          "title": "An auditable record of who, where, and when",
+          "sub": "No paper logbooks \u00b7 Real time"
+        },
+        "card2": {
+          "label": "Regulatory framework",
+          "title": "ASF \u00b7 SFP \u00b7 CONAC \u00b7 3 levels of government",
+          "sub": "Federal, State, and Municipal"
+        },
+        "card3": {
+          "label": "Modularity",
+          "title": "Start with software, scale to hardware",
+          "sub": "RFID \u00b7 Vehicle barriers \u00b7 Sensors"
+        },
+        "card4": {
+          "label": "Diagnosis",
+          "title": "A technical diagnosis session at no cost",
+          "sub": "Schedule your first consultation today"
+        }
+      }
+    },
+    "services": {
+      "eyebrow": "Audit services",
+      "title": "Expertise for public management",
+      "description": "Designed for Mexico's regulatory framework. We cover all three levels of government with technical rigor and real support at every stage.",
+      "cards": {
+        "card01": {
+          "number": "01",
+          "title": "Government Auditing",
+          "description": "Financial, performance, compliance, and public works auditing. Review from bidding to handover-reception with strict alignment to CONAC."
+        },
+        "card02": {
+          "number": "02",
+          "title": "Comprehensive Risk Management",
+          "description": "Risk matrices, anti-fraud protocols, cybersecurity, and business continuity plans aligned with the SNA."
+        },
+        "card03": {
+          "number": "03",
+          "title": "Internal Control & Compliance",
+          "description": "Implementation of the COSO model under SFP requirements. Organization manuals, codes of ethics, and reporting/complaint systems."
+        },
+        "card04": {
+          "number": "04",
+          "title": "Advisory & Settlement Support",
+          "description": "Guidance against ASF, ASE, and SFP. Technical files, response letters, and accounting harmonization aligned to CONAC."
+        }
+      }
+    },
+    "technology": {
+      "eyebrow": "Technology solutions",
+      "title": "Technology for institutions without blind spots",
+      "description": "The problem isn't lack of information \u2014 it's that information isn't available in real time.",
+      "quote": "\"What isn't measured can't be managed.\"",
+      "cards": {
+        "card01": {
+          "title": "Access Control & Visitor Management",
+          "description": "Frictionless perimeter security via QR. Real-time auditable entry/exit records, digital credentials, and automated reports.",
+          "scenario": "A citizen receives a QR when scheduling an appointment. Upon arrival they scan it \u2014 the system notifies the officer and records the exact time. No paper logbooks."
+        },
+        "card02": {
+          "title": "Human Capital Management",
+          "description": "Check-in/out with geolocation. Verifies presence in the correct coordinates and generates consolidated hour reports without discrepancies.",
+          "scenario": "The field supervisor confirms that staff started at the right place and time. At month-end, HR downloads the report without manual reconciliation."
+        },
+        "card03": {
+          "title": "Asset & Inventory Control",
+          "description": "Digital monitoring of stock and fixed assets. Low-stock alerts and decision dashboards. Scalable to RFID technology.",
+          "scenario": "The system alerts when critical supplies fall below the threshold. Missing items are detected in minutes, without stopping operations."
+        }
+      },
+      "modularNote": "All our solutions are modular: start with software and scale to RFID, sensors, or vehicle barriers as your institution requires."
+    },
+    "process": {
+      "eyebrow": "Process",
+      "leftCard": {
+        "title": "How we work with you",
+        "description": "We don't sell generic solutions. We adapt the tools to your institution's specific workflows from day one.",
+        "cta": "Start diagnosis \u2192"
+      },
+      "phases": {
+        "card01": {
+          "title": "Needs diagnosis",
+          "description": "We analyze current processes, identify gaps, and define the implementation scope without compromises."
+        },
+        "card02": {
+          "title": "Platform configuration",
+          "description": "We adapt system modules and workflows to your organization's specific needs."
+        },
+        "card03": {
+          "title": "User training",
+          "description": "We train your team so they adopt the tools with confidence from day one."
+        },
+        "card04": {
+          "title": "Support & scaling",
+          "description": "We support solution growth and integrate advanced hardware when you're ready."
+        }
+      }
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Ready to manage without blind spots?",
+      "description": "Tell us which stage your institution is in. A specialist will get in touch to coordinate your free diagnosis session.",
+      "direct": {
+        "contactLabel": "Direct contact",
+        "contactValue": "",
+        "phoneLabel": "Phone",
+        "phoneValue": "",
+        "emailLabel": "Email",
+        "emailValue": ""
+      },
+      "form": {
+        "title": "Request diagnosis",
+        "fields": {
+          "fullName": {
+            "label": "Full name",
+            "placeholder": "Maria Gonzalez"
+          },
+          "institution": {
+            "label": "Institution",
+            "placeholder": "Government department or company"
+          },
+          "email": {
+            "label": "Email address",
+            "placeholder": "correo@institucion.gob.mx"
+          },
+          "phone": {
+            "label": "Phone",
+            "placeholder": "222 000 0000"
+          },
+          "orgType": {
+            "label": "Organization type"
+          },
+          "interest": {
+            "label": "What are you interested in?"
+          },
+          "challenge": {
+            "label": "Main challenge",
+            "placeholder": "Briefly describe your institution's situation..."
+          }
+        },
+        "orgTypeOptions": {
+          "public": "Public",
+          "private": "Private"
+        },
+        "interestOptions": {
+          "audit": "Government auditing",
+          "technology": "Technology solutions",
+          "both": "Both"
+        },
+        "submitLabel": "Request diagnosis",
+        "submitLoading": "Sending...",
+        "successMessage": "\u2713 Request sent \u2014 we\u2019ll contact you soon",
+        "successSubMessage": "If we need additional details, we\u2019ll email you to coordinate your session.",
+        "summaryLabel": "Request summary",
+        "sendAnotherLabel": "Send another request",
+        "validation": {
+          "email": "Enter a valid email address.",
+          "phone": "Enter a phone number with digits only (7 to 15 digits)."
+        },
+        "errorHeading": "We couldn\u2019t send your request",
+        "errorSubMessage": "Email us at",
+        "contactEmail": "alissonrodrigues.st@gmail.com",
+        "tryAgainLabel": "Try again"
+      }
+    },
+    "footer": {
+      "brand": "Auditor\u00eda & Gesti\u00f3n\nInteligente de Lineamientos",
+      "centerLine": "",
+      "rightLine": "\u00a9 2025 \u00b7 Ciudad de Mexico, Mexico"
+    }
+  }
+}
