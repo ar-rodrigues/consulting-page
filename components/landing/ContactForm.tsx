@@ -55,7 +55,8 @@ export default function ContactForm() {
     const isValidEmail = (value: string) =>
       /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
-    if (!/^\d{7,15}$/.test(normalizedPhone)) {
+    // Phone should be digits only; length/pattern is intentionally not strict.
+    if (!/^\d+$/.test(normalizedPhone) || normalizedPhone.length === 0 || normalizedPhone.length > 20) {
       setClientError(t("contact.form.validation.phone"));
       return;
     }
@@ -130,7 +131,12 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} aria-label={t("contact.form.title")}>
+    <form
+      onSubmit={handleSubmit}
+      aria-label={t("contact.form.title")}
+      // Evita el "Please match the requested format." nativo del navegador.
+      noValidate
+    >
       <div className={styles.eyebrow}>{t("contact.form.title")}</div>
 
       {activeError ? (
@@ -229,7 +235,6 @@ export default function ContactForm() {
             className={styles.input}
             type="tel"
             inputMode="numeric"
-            pattern="\\d*"
             autoComplete="tel"
             disabled={loading}
             value={phone}

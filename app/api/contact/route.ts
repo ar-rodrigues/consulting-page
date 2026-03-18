@@ -148,11 +148,15 @@ export async function POST(req: Request) {
       return Response.json({ error: "Correo electrónico inválido." }, { status: 400 });
     }
 
-    if (!/^\d{7,15}$/.test(normalizedPhone)) {
+    // Phone should be digits only; length/pattern is intentionally not strict.
+    if (
+      !/^\d+$/.test(normalizedPhone) ||
+      normalizedPhone.length === 0 ||
+      normalizedPhone.length > 20
+    ) {
       return Response.json(
         {
-          error:
-            "Teléfono inválido. Debe contener solo números (7 a 15 dígitos).",
+          error: "Teléfono inválido. Debe contener solo números.",
         },
         { status: 400 },
       );

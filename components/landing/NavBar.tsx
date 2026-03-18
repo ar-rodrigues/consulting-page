@@ -90,7 +90,7 @@ export default function NavBar() {
               activeSection === "servicios" ? styles.navLinkActive : ""
             }`}
           >
-            {t("nav.links.services")}
+            <span className={styles.navLinkText}>{t("nav.links.services")}</span>
           </a>
           <a
             href="#tecnologia"
@@ -98,7 +98,9 @@ export default function NavBar() {
               activeSection === "tecnologia" ? styles.navLinkActive : ""
             }`}
           >
-            {t("nav.links.technology")}
+            <span className={styles.navLinkText}>
+              {t("nav.links.technology")}
+            </span>
           </a>
           <a
             href="#proceso"
@@ -106,7 +108,7 @@ export default function NavBar() {
               activeSection === "proceso" ? styles.navLinkActive : ""
             }`}
           >
-            {t("nav.links.process")}
+            <span className={styles.navLinkText}>{t("nav.links.process")}</span>
           </a>
         </nav>
 

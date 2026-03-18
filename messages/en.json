@@ -196,7 +196,7 @@
         "sendAnotherLabel": "Send another request",
         "validation": {
           "email": "Enter a valid email address.",
-          "phone": "Enter a phone number with digits only (7 to 15 digits)."
+          "phone": "Enter a phone number with digits only."
         },
         "errorHeading": "We couldn\u2019t send your request",
         "errorSubMessage": "Email us at",

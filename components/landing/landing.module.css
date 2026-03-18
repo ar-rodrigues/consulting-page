@@ -160,6 +160,11 @@
   padding: 10px 0;
 }
 
+.navLinkText {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .navLink::before {
   content: "";
   position: absolute;
@@ -1009,11 +1014,11 @@
   /* Mobile side padding: sections currently lack any horizontal padding. */
   .heroInner {
     grid-template-columns: 1fr;
-    padding: 0 6%;
+    padding: 0 8%;
   }
 
   .sectionInner {
-    padding: 0 6%;
+    padding: 0 8%;
   }
 
   /* Mobile navigation: vertical fixed menu on the right. */
@@ -1024,9 +1029,61 @@
     gap: 10px;
     position: fixed;
     top: 72px; /* header height (56px) + breathing room */
-    right: 5%;
+    right: 0;
     padding: 10px 0;
     z-index: 60;
+  }
+
+  /* Rotate the labels so they occupy less horizontal space. */
+  .navLink {
+    padding: 0;
+    width: 38px;
+    justify-content: center;
+  }
+
+  .navLinkText {
+    /* Use vertical writing mode so the layout reserves space for each label. */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg); /* read “bottom-to-top” */
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Keep the active/hover indicator aligned to the rotated label. */
+  .navLink::before {
+    left: auto;
+    right: 6px; /* keep the indicator away from the label strokes */
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    border-radius: 999px;
+    z-index: 0;
+    opacity: 0.35;
+  }
+
+  .navLink:hover::before,
+  .navLink:focus-visible::before,
+  .navLinkActive::before {
+    transform: scaleY(1);
+  }
+
+  /* Active state: more visible without changing size. */
+  .navLinkActive {
+    color: var(--gold);
+    font-weight: 800;
+  }
+
+  .navLinkActive .navLinkText {
+    color: var(--gold);
+  }
+
+  .navLinkActive::before {
+    width: 3px;
+    background: var(--gold-light);
+    opacity: 0.45;
   }
 
   .heroRight {

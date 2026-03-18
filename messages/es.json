@@ -196,7 +196,7 @@
         "sendAnotherLabel": "Enviar otra solicitud",
         "validation": {
           "email": "Ingresa un correo electr\u00f3nico v\u00e1lido.",
-          "phone": "Ingresa un tel\u00e9fono con solo n\u00fameros (7 a 15 d\u00edgitos)."
+          "phone": "Ingresa un tel\u00e9fono con solo n\u00fameros."
         },
         "errorHeading": "No pudimos enviar tu solicitud",
         "errorSubMessage": "Escr\u00edbenos a",
