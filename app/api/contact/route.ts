@@ -16,6 +16,31 @@ const rateStore: Map<string, RateEntry> = (() => {
   return g.__contactRateStore;
 })();
 
+function isValidEmailAddress(value: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+/** Parses CONTACT_TO_EMAIL: one or more addresses separated by commas or semicolons. */
+function parseContactToEmails(raw: string): string[] {
+  const parts = raw
+    .split(/[,;]+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0);
+
+  if (parts.length === 0) {
+    throw new Error("CONTACT_TO_EMAIL must contain at least one email address.");
+  }
+
+  const invalid = parts.filter((p) => !isValidEmailAddress(p));
+  if (invalid.length > 0) {
+    throw new Error(
+      `CONTACT_TO_EMAIL contains invalid address(es): ${invalid.join(", ")}`,
+    );
+  }
+
+  return parts.map((p) => p.toLowerCase());
+}
+
 function getRequestIp(req: Request) {
   const forwardedFor = req.headers.get("x-forwarded-for");
   if (forwardedFor) return forwardedFor.split(",")[0]!.trim();
@@ -141,10 +166,7 @@ export async function POST(req: Request) {
     const trimmedEmail = email.trim().toLowerCase();
     const normalizedPhone = phone.replace(/\D/g, "");
 
-    const isValidEmail = (value: string) =>
-      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-
-    if (!isValidEmail(trimmedEmail)) {
+    if (!isValidEmailAddress(trimmedEmail)) {
       return Response.json({ error: "Correo electrónico inválido." }, { status: 400 });
     }
 
@@ -168,15 +190,25 @@ export async function POST(req: Request) {
     const smtpPass = process.env.SMTP_PASS;
     const smtpSecure = process.env.SMTP_SECURE === "true";
 
-    const contactTo = process.env.CONTACT_TO_EMAIL;
+    const contactToRaw = process.env.CONTACT_TO_EMAIL;
     const contactFrom = process.env.CONTACT_FROM_EMAIL;
 
-    if (!smtpHost || !smtpPortRaw || !smtpUser || !smtpPass || !contactTo || !contactFrom) {
+    if (!smtpHost || !smtpPortRaw || !smtpUser || !smtpPass || !contactToRaw || !contactFrom) {
       return Response.json(
         {
           error:
             "Server email is not configured. Please set SMTP_* and CONTACT_* environment variables.",
         },
+        { status: 500 },
+      );
+    }
+
+    let contactToRecipients: string[];
+    try {
+      contactToRecipients = parseContactToEmails(contactToRaw);
+    } catch (e) {
+      return Response.json(
+        { error: e instanceof Error ? e.message : "Invalid CONTACT_TO_EMAIL." },
         { status: 500 },
       );
     }
@@ -327,7 +359,7 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: contactFrom,
-      to: contactTo,
+      to: contactToRecipients,
       subject,
       text,
       html,
