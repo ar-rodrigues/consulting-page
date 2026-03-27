@@ -9,7 +9,8 @@
       "links": {
         "services": "Auditing",
         "technology": "Technology",
-        "process": "Process"
+        "process": "Process",
+        "team": "Team"
       },
       "cta": "Diagnosis"
     },
@@ -134,6 +135,113 @@
         "card04": {
           "title": "Support & scaling",
           "description": "We support solution growth and integrate advanced hardware when you're ready."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "Who we are",
+      "title": "Leadership with real institutional experience",
+      "profile": {
+        "initials": "AN",
+        "name": "Mtro. Alan Nazul Peraza Gonzalez",
+        "role": "Founding Partner · Audit Director"
+      },
+      "credentials": {
+        "item01": {
+          "label": "Education",
+          "value": "Public Economics, UNAM"
+        },
+        "item02": {
+          "label": "Master's in Auditing",
+          "value": "License 14431267"
+        },
+        "item03": {
+          "label": "Master's in Financial Economics",
+          "value": "License 13744188"
+        },
+        "item04": {
+          "label": "Institutional trajectory",
+          "value": "Superior Audit Office of the Federation (ASF) - Deputy Director of Forensic Auditing"
+        },
+        "item05": {
+          "label": "Reference framework",
+          "value": "COSO 2013 · Public Finance · Chamber of Deputies"
+        }
+      },
+      "quote": "\"Modern auditing demands speed and precision. At AGIL, those two pillars define every process.\"",
+      "bio": {
+        "paragraph1": "With more than 13 years of experience in oversight and public administration, Mtro. Nazul Peraza leads AGIL with a vision that combines technical rigor and technology adoption. His time at ASF as Deputy Director of Forensic Auditing gave him advanced analytical capability in federalized spending, forensic analysis, financial audits, performance audits, public works, and procurement, always with a risk analysis approach.",
+        "paragraph2": "A specialist in econometrics and data analysis, his methodology breaks away from traditional schemes and integrates advanced technology tools to automate irregularity detection, reaching efficiency levels up to 2,700% higher than conventional methods."
+      },
+      "stats": {
+        "item01": {
+          "number": "13+",
+          "description": "years in oversight and public administration"
+        },
+        "item02": {
+          "number": "23+",
+          "description": "years as a trainer in the public sector"
+        },
+        "item03": {
+          "number": "2,700%",
+          "description": "higher efficiency vs conventional analytical methods"
+        }
+      },
+      "toolsLabel": "Tools and reference frameworks",
+      "tools": {
+        "item01": "Python",
+        "item02": "R",
+        "item03": "SPSS",
+        "item04": "Econometrics",
+        "item05": "COSO 2013",
+        "item06": "Forensic Auditing",
+        "item07": "Risk Analysis",
+        "item08": "Federalized Spending"
+      },
+      "tech": {
+        "initials": "AR",
+        "name": "Alisson\nRodrigues",
+        "role": "Chief Technology Officer at AGIL (Auditoria & Gestion Inteligente de Lineamientos)",
+        "pathLabel": "Career path",
+        "milestones": {
+          "item01": {
+            "title": "Communications Sergeant",
+            "description": "Brazilian Army. Team leadership and technical communications management."
+          },
+          "item02": {
+            "title": "Research & Analysis",
+            "description": "Scientific research in innovation and work at the Federal University of Rio Grande do Sul (UFRGS)."
+          },
+          "item03": {
+            "title": "Full-stack solution development",
+            "description": "Full-stack development focused on business outcomes."
+          }
+        },
+        "quote": "\"It is imperative to measure in order to manage; only through precise metrics can we automate and, ultimately, create value.\"",
+        "paragraph1": "With an international trajectory rooted in intellectual autonomy, Alisson Rodrigues stands out for a global profile and strategic business vision. His experience begins as a Communications Sergeant in the Brazilian Army, complemented by studies in Social Sciences at the Federal University of Rio Grande do Sul and scientific research in innovation and startups. A specialist in ecosystems such as React, Next.js, and IoT solutions, he applies his analytical strength to software development and building data architectures in SQL and NoSQL environments.",
+        "paragraph2": "Guided by continuous improvement, he has focused on process engineering and organizations' technology transition, with specialized emphasis on auditing. His methodology centers on decoding how complex systems work and turning them into optimized operations. As a facilitator in international settings, he integrates solutions that automate repetitive tasks so teams can focus on analytical and creative work and achieve stronger institutional efficiency.",
+        "stats": {
+          "item01": {
+            "number": "7+",
+            "description": "Years in software development"
+          },
+          "item02": {
+            "number": "Full",
+            "description": "Stack: Web & mobile architectures"
+          },
+          "item03": {
+            "number": "Efficiency",
+            "description": "Automation & operational optimization"
+          }
+        },
+        "toolsLabel": "Stack & strengths",
+        "tools": {
+          "item01": "React / Next.js",
+          "item02": "React Native",
+          "item03": "SQL / NoSQL",
+          "item04": "Data architecture",
+          "item05": "Automation",
+          "item06": "Digital strategy"
         }
       }
     },

@@ -19,7 +19,7 @@ export default async function ProcessSection() {
             <div className={styles.processStickyDesc}>
               {t("process.leftCard.description")}
             </div>
-            <a href="#contacto" className={styles.processStickyBtn}>
+            <a href="#contact" className={styles.processStickyBtn}>
               {t("process.leftCard.cta")}
             </a>
           </aside>

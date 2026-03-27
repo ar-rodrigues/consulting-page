@@ -9,7 +9,8 @@
       "links": {
         "services": "Auditoria",
         "technology": "Tecnologia",
-        "process": "Proceso"
+        "process": "Proceso",
+        "team": "Equipo"
       },
       "cta": "Diagnostico"
     },
@@ -134,6 +135,113 @@
         "card04": {
           "title": "Soporte y escalamiento",
           "description": "Acompanamos el crecimiento de la solucion e integramos hardware avanzado cuando estes listo."
+        }
+      }
+    },
+    "team": {
+      "eyebrow": "Quienes somos",
+      "title": "Liderazgo con experiencia institucional real",
+      "profile": {
+        "initials": "AN",
+        "name": "Mtro. Alan Nazul Peraza Gonzalez",
+        "role": "Socio Fundador · Director de Auditoria"
+      },
+      "credentials": {
+        "item01": {
+          "label": "Formacion",
+          "value": "Economia Publica, UNAM"
+        },
+        "item02": {
+          "label": "Maestria en Auditoria",
+          "value": "Ced. 14431267"
+        },
+        "item03": {
+          "label": "Maestria en Economia Financiera",
+          "value": "Ced. 13744188"
+        },
+        "item04": {
+          "label": "Trayectoria institucional",
+          "value": "Auditoria Superior de la Federacion (ASF) - Subdirector de Auditoria Forense"
+        },
+        "item05": {
+          "label": "Marco de referencia",
+          "value": "COSO 2013 · Finanzas Publicas · Camara de Diputados"
+        }
+      },
+      "quote": "\"La auditoria moderna exige velocidad y precision. En AGIL, esos dos pilares definen cada proceso.\"",
+      "bio": {
+        "paragraph1": "Con mas de 13 anos de experiencia en fiscalizacion y administracion publica, el Mtro. Nazul Peraza encabeza AGIL con una vision que combina rigor tecnico y adopcion tecnologica. Su paso por la ASF como Subdirector de Auditoria Forense le otorgo una capacidad analitica superior en el manejo de gasto federalizado, analisis forense, auditorias financieras, de desempeno, obra publica y adquisiciones, siempre desde un enfoque de analisis de riesgos.",
+        "paragraph2": "Especialista en econometria y analisis de datos, su metodologia rompe con los esquemas tradicionales e integra herramientas tecnologicas avanzadas para automatizar la deteccion de irregularidades, logrando niveles de eficiencia hasta 2,700% superiores a los metodos convencionales."
+      },
+      "stats": {
+        "item01": {
+          "number": "13+",
+          "description": "anos en fiscalizacion y administracion publica"
+        },
+        "item02": {
+          "number": "23+",
+          "description": "anos como capacitador en sector publico"
+        },
+        "item03": {
+          "number": "2,700%",
+          "description": "mayor eficiencia vs metodos analiticos convencionales"
+        }
+      },
+      "toolsLabel": "Herramientas y marcos de referencia",
+      "tools": {
+        "item01": "Python",
+        "item02": "R",
+        "item03": "SPSS",
+        "item04": "Econometria",
+        "item05": "COSO 2013",
+        "item06": "Auditoria Forense",
+        "item07": "Analisis de Riesgos",
+        "item08": "Gasto Federalizado"
+      },
+      "tech": {
+        "initials": "AR",
+        "name": "Alisson\nRodrigues",
+        "role": "Director de Tecnolog\u00eda de AGIL (Auditor\u00eda & Gesti\u00f3n Inteligente de Lineamientos)",
+        "pathLabel": "Trayectoria",
+        "milestones": {
+          "item01": {
+            "title": "Sargento de Comunicaciones",
+            "description": "Ej\u00e9rcito Brasile\u00f1o. Liderazgo de equipos y gesti\u00f3n t\u00e9cnica en comunicaciones."
+          },
+          "item02": {
+            "title": "Investigaci\u00f3n y An\u00e1lisis",
+            "description": "Investigaci\u00f3n Cient\u00edfica en Innovaci\u00f3n y Trabajo en la Universidad Federal do Rio Grande do Sul (UFRGS)."
+          },
+          "item03": {
+            "title": "Desarrollo de Soluciones Full Stack",
+            "description": "Desarrollo Full Stack enfocado en resultados de negocio."
+          }
+        },
+        "quote": "\"Es imperativo medir para gestionar; solo mediante la m\u00e9trica precisa es posible automatizar y, finalmente, generar valor.\"",
+        "paragraph1": "Con una trayectoria internacional cimentada en la autonom\u00eda intelectual, Alisson Rodrigues destaca por un perfil global con visi\u00f3n estrat\u00e9gica de negocios. Su experiencia se origina como Sargento de Comunicaciones en el Ej\u00e9rcito Brasile\u00f1o, complementada por estudios en Ciencias Sociales en la Universidad Federal do Rio Grande do Sul e investigaci\u00f3n cient\u00edfica en innovaci\u00f3n y startups. Especialista en ecosistemas como React, NextJS y soluciones IoT, aplica su capacidad anal\u00edtica en el desarrollo de software y la construcci\u00f3n de arquitecturas de datos en entornos SQL y NoSQL.",
+        "paragraph2": "Bajo una filosof\u00eda de mejora continua, se ha dedicado a la ingenier\u00eda de procesos y la transici\u00f3n tecnol\u00f3gica de organizaciones, con un enfoque especializado en el \u00e1rea de auditor\u00eda. Su metodolog\u00eda se centra en descifrar el funcionamiento de sistemas complejos para traducirlos en operaciones optimizadas. Como facilitador en entornos internacionales, integra soluciones que automatizan tareas repetitivas, permitiendo que el capital humano se concentre en etapas anal\u00edticas y creativas para garantizar una mayor eficiencia institucional.",
+        "stats": {
+          "item01": {
+            "number": "7+",
+            "description": "A\u00f1os de trayectoria en desarrollo de software"
+          },
+          "item02": {
+            "number": "Full",
+            "description": "Stack: Arquitecturas web y m\u00f3viles"
+          },
+          "item03": {
+            "number": "Eficiencia",
+            "description": "Automatizaci\u00f3n y optimizaci\u00f3n operativa"
+          }
+        },
+        "toolsLabel": "Stack y competencias",
+        "tools": {
+          "item01": "React / NextJS",
+          "item02": "React Native",
+          "item03": "SQL / NoSQL",
+          "item04": "Arquitectura de Datos",
+          "item05": "Automatizaci\u00f3n",
+          "item06": "Estrategia Digital"
         }
       }
     },

@@ -7,7 +7,7 @@ export default async function ContactSection() {
   const t = await getTranslations("landing");
 
   return (
-    <section id="contacto" className={`${styles.section} ${styles.sectionBlack}`}>
+    <section id="contact" className={`${styles.section} ${styles.sectionBlack}`}>
       <div className={styles.sectionInner}>
         <div className={styles.contactGrid}>
           <div className={styles.contactInfoCard}>

@@ -41,7 +41,7 @@ export default async function HeroSection() {
             <a href="#servicios" className={styles.btnPrimary}>
               {t("hero.ctaPrimary")}
             </a>
-            <a href="#contacto" className={styles.btnSecondary}>
+            <a href="#contact" className={styles.btnSecondary}>
               {t("hero.ctaSecondary")}
             </a>
           </div>

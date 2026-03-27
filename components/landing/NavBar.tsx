@@ -5,46 +5,53 @@ import { useEffect, useState } from "react";
 
 import styles from "./landing.module.css";
 
-type ActiveSection = "servicios" | "tecnologia" | "proceso" | null;
+type ActiveSection = "servicios" | "tecnologia" | "proceso" | "equipo" | null;
 
 export default function NavBar() {
   const t = useTranslations("landing");
   const [activeSection, setActiveSection] = useState<ActiveSection>(null);
 
   useEffect(() => {
-    const ids = ["servicios", "tecnologia", "proceso"] as const;
+    const ids = ["servicios", "tecnologia", "proceso", "equipo"] as const;
+
+    /** Pixels from viewport top; align with fixed nav (~56px) + small margin */
+    const sectionActivationY = 72;
 
     const computeActiveFromScroll = () => {
-      const viewportHeight = window.innerHeight;
-      const viewportCenterY = viewportHeight / 2;
-
-      // La sección activa es la más cercana al centro del viewport.
-      const closestByCenter = (() => {
-        let best: { id: ActiveSection; dist: number } | null = null;
-        for (const id of ids) {
-          const el = document.getElementById(id);
-          if (!el) continue;
-          const r = el.getBoundingClientRect();
-          const center = (r.top + r.bottom) / 2;
-          const dist = Math.abs(center - viewportCenterY);
-          if (!best || dist < best.dist) best = { id, dist };
+      const contactEl = document.getElementById("contact");
+      if (contactEl) {
+        const contactTop = contactEl.getBoundingClientRect().top;
+        if (contactTop <= sectionActivationY) {
+          setActiveSection(null);
+          return;
         }
-        return best;
-      })();
+      }
 
-      const nextActive: ActiveSection = closestByCenter?.id ?? null;
+      // Last section (in page order) whose top has crossed the activation line.
+      let nextActive: ActiveSection = null;
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const top = el.getBoundingClientRect().top;
+        if (top <= sectionActivationY) {
+          nextActive = id;
+        }
+      }
 
       setActiveSection(nextActive);
     };
 
     const setFromHash = () => {
       const rawHash = window.location.hash.replace("#", "");
+      if (rawHash === "contact") {
+        setActiveSection(null);
+        return;
+      }
       if (ids.includes(rawHash as (typeof ids)[number])) {
         setActiveSection(rawHash as ActiveSection);
       }
     };
 
-    // Inicial: hash primero (si existe), si no, el cálculo por scroll.
     if (window.location.hash) setFromHash();
 
     let raf = 0;
@@ -56,15 +63,28 @@ export default function NavBar() {
       });
     };
 
+    const onHashChange = () => {
+      setFromHash();
+      window.requestAnimationFrame(() => {
+        computeActiveFromScroll();
+      });
+    };
+
     computeActiveFromScroll();
+    const syncAfterLayout = window.requestAnimationFrame(() => {
+      computeActiveFromScroll();
+    });
 
     window.addEventListener("scroll", onScrollOrResize, { passive: true });
     window.addEventListener("resize", onScrollOrResize);
+    window.addEventListener("hashchange", onHashChange);
 
     return () => {
       window.removeEventListener("scroll", onScrollOrResize);
       window.removeEventListener("resize", onScrollOrResize);
+      window.removeEventListener("hashchange", onHashChange);
       if (raf) window.cancelAnimationFrame(raf);
+      window.cancelAnimationFrame(syncAfterLayout);
     };
   }, []);
 
@@ -110,9 +130,17 @@ export default function NavBar() {
           >
             <span className={styles.navLinkText}>{t("nav.links.process")}</span>
           </a>
+          <a
+            href="#equipo"
+            className={`${styles.navLink} ${
+              activeSection === "equipo" ? styles.navLinkActive : ""
+            }`}
+          >
+            <span className={styles.navLinkText}>{t("nav.links.team")}</span>
+          </a>
         </nav>
 
-        <a href="#contacto" className={styles.navCta}>
+        <a href="#contact" className={styles.navCta}>
           {t("nav.cta")}
         </a>
       </div>
