@@ -88,9 +88,7 @@ export default async function TeamSection() {
               <div className={`${styles.teamName} ${styles.teamNameMultiline}`}>
                 {t("team.tech.name")}
               </div>
-              <div className={`${styles.teamRole} ${styles.teamRoleLong}`}>
-                {t("team.tech.role")}
-              </div>
+              <div className={styles.teamRole}>{t("team.tech.role")}</div>
 
               <span className={styles.teamPathLabel}>{t("team.tech.pathLabel")}</span>
               <div className={styles.teamMilestones}>

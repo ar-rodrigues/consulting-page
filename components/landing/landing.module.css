@@ -614,14 +614,6 @@
   margin-bottom: 22px;
 }
 
-.teamRoleLong {
-  text-transform: none;
-  letter-spacing: 0.02em;
-  line-height: 1.45;
-  font-weight: 500;
-  color: rgba(201, 168, 76, 0.92);
-}
-
 .teamCredentials {
   display: flex;
   flex-direction: column;
@@ -1404,6 +1396,11 @@
 
   .teamStatsGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Three stat tiles: avoid an empty fourth cell in the 2-column grid */
+  .teamStatCard:nth-child(3) {
+    grid-column: 1 / -1;
   }
 
   .processGrid {
