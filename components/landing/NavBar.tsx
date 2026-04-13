@@ -5,14 +5,19 @@ import { useEffect, useState } from "react";
 
 import styles from "./landing.module.css";
 
-type ActiveSection = "servicios" | "tecnologia" | "proceso" | "equipo" | null;
+type ActiveSection =
+  | "servicios"
+  | "tecnologia"
+  | "proceso"
+  // | "equipo"
+  | null;
 
 export default function NavBar() {
   const t = useTranslations("landing");
   const [activeSection, setActiveSection] = useState<ActiveSection>(null);
 
   useEffect(() => {
-    const ids = ["servicios", "tecnologia", "proceso", "equipo"] as const;
+    const ids = ["servicios", "tecnologia", "proceso" /* , "equipo" */] as const;
 
     /** Pixels from viewport top; align with fixed nav (~56px) + small margin */
     const sectionActivationY = 72;
@@ -130,14 +135,14 @@ export default function NavBar() {
           >
             <span className={styles.navLinkText}>{t("nav.links.process")}</span>
           </a>
-          <a
+          {/* <a
             href="#equipo"
             className={`${styles.navLink} ${
               activeSection === "equipo" ? styles.navLinkActive : ""
             }`}
           >
             <span className={styles.navLinkText}>{t("nav.links.team")}</span>
-          </a>
+          </a> */}
         </nav>
 
         <a href="#contact" className={styles.navCta}>

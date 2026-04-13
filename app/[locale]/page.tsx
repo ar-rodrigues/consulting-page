@@ -4,7 +4,7 @@ import Footer from "@/components/landing/Footer";
 import HeroSection from "@/components/landing/HeroSection";
 import ProcessSection from "@/components/landing/ProcessSection";
 import ServicesSection from "@/components/landing/ServicesSection";
-import TeamSection from "@/components/landing/TeamSection";
+// import TeamSection from "@/components/landing/TeamSection";
 import TechnologySection from "@/components/landing/TechnologySection";
 
 import styles from "@/components/landing/landing.module.css";
@@ -18,7 +18,7 @@ export default async function Home() {
         <ServicesSection />
         <TechnologySection />
         <ProcessSection />
-        <TeamSection />
+        {/* <TeamSection /> */}
         <ContactSection />
       </main>
       <Footer />

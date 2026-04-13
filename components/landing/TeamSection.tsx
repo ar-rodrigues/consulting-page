@@ -6,9 +6,10 @@ const credentialKeys = ["01", "02", "03", "04", "05"] as const;
 const statKeys = ["01", "02", "03"] as const;
 const toolKeys = ["01", "02", "03", "04", "05", "06", "07", "08"] as const;
 
-const milestoneKeys = ["01", "02", "03"] as const;
-const techStatKeys = ["01", "02", "03"] as const;
-const techToolKeys = ["01", "02", "03", "04", "05", "06"] as const;
+// Alisson (tech) profile — uncomment when restoring the second block below
+// const milestoneKeys = ["01", "02", "03"] as const;
+// const techStatKeys = ["01", "02", "03"] as const;
+// const techToolKeys = ["01", "02", "03", "04", "05", "06"] as const;
 
 export default async function TeamSection() {
   const t = await getTranslations("landing");
@@ -77,6 +78,7 @@ export default async function TeamSection() {
             </div>
           </div>
 
+          {/*
           <div className={`${styles.teamGrid} ${styles.teamGridFollow}`}>
             <div className={styles.teamLeft}>
               <div className={styles.teamAvatar}>
@@ -137,6 +139,7 @@ export default async function TeamSection() {
               </div>
             </div>
           </div>
+          */}
         </div>
       </div>
     </section>
